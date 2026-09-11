@@ -5,13 +5,11 @@ Página web creada como proyecto escolar.
 ## Contenido
 
 * `index.html` — Página principal del proyecto.
-* Archivos adicionales — Recursos utilizados por la página.
 
 ## Tecnologías
 
 * HTML
 * CSS
-* JavaScript
 
 ## Publicación
 
