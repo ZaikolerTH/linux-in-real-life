@@ -175,6 +175,24 @@ h1 {
     color: #8d97a5;
 }
 
+.share {
+  display: flex;
+  gap: 10px;
+}
+
+.share a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share img {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 700px) {
     .page {
         margin: 0;
@@ -221,16 +239,47 @@ h1 {
     </div>
 
     <div class="caption">
-      Video: <i>How Linux is Built</i>. The Linux Foundation.
+      Video: <i>Placeholder (Títutlo del video)</i>. Subido a Placeholder (Canal).
     </div>
 
-    <!-- COMPARTIR -->
-    <div class="share">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" title="Facebook">f</a>
-      <a href="https://twitter.com/intent/tweet?url=" target="_blank" title="X">𝕏</a>
-      <a href="mailto:?subject=Linux en la vida cotidiana actualmente y a largo plazo"
-         title="Compartir por correo">✉</a>
-    </div>
+<!-- COMPARTIR -->
+<div class="share">
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u="
+     target="_blank"
+     title="Facebook">
+    <img src="https://cdn.simpleicons.org/facebook" alt="Facebook">
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/"
+     target="_blank"
+     title="Instagram">
+    <img src="https://cdn.simpleicons.org/instagram" alt="Instagram">
+  </a>
+
+  <!-- Correo -->
+  <a href="mailto:?subject=Linux en la vida cotidiana actualmente y a largo plazo"
+     title="Compartir por correo">
+    <img src="https://cdn.simpleicons.org/gmail" alt="Correo">
+  </a>
+
+  <!-- Copiar enlace -->
+  <a href="#"
+     onclick="copiarEnlace(); return false;"
+     title="Copiar enlace">
+    <img src="https://cdn.simpleicons.org/link" alt="Copiar enlace">
+  </a>
+
+</div>
+
+<script>
+function copiarEnlace() {
+  navigator.clipboard.writeText(window.location.href);
+  alert("¡Enlace copiado al portapapeles!");
+}
+</script>
 
     <section class="content">
 
@@ -277,14 +326,10 @@ h1 {
       </p>
 
       <div class="archive">
-        <div class="archive-title">ARCHIVADO EN:</div>
+        <div class="archive-title">Placeholder</div>
 
         <div class="tags">
-          <span>Linux</span>
-          <span>Tecnología</span>
-          <span>Código abierto</span>
-          <span>Informática</span>
-          <span>Sistemas operativos</span>
+          <span>Placeholder de lo de arriba</span>
         </div>
       </div>
 
